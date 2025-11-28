@@ -20,6 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
+                sh("error 'Simulated Deployment Failure'") // Simulate a failure
             }
         }
         stage('Finish') {
